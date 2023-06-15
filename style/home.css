@@ -1,0 +1,86 @@
+body{
+    margin: 0%;
+}
+.container{
+     /* border: 2px solid red; */
+     height: 600px;
+     width: auto;
+     background-image: linear-gradient(black,darkBlue);
+
+}
+.container nav{
+     /* border: 2px solid red; */
+     margin-top: 5px;
+     height: 110px;
+     width: auto;
+     display: flex;
+
+}
+nav img{
+     height: 100px;
+    margin-left: 40px;
+    margin-top: 5px;
+    /* border: 2px solid red; */
+}
+nav .tags{
+     /* border: 2px solid red; */
+     height: 40px;
+     width: 900px;
+     margin-top: 20px;
+     margin-left: 450px;
+     display: flex;
+     justify-content: space-between; 
+}
+nav a{
+    text-decoration: none;
+    color: #E65100;
+    font-size: 20px;
+}
+nav a:hover{
+    color: white;
+}
+
+.container .items{
+    border: 2px solid white;
+    background-color: white;
+    margin-top: 100px;
+    height: 300px;
+    width: 80%;
+    margin-left: 140px;
+    border-radius: 20px;
+}
+.container .items .booking{
+    border: 2px solid lightblue;
+    background-color: white;
+    width:70%;
+    height: 90px;
+    margin-top: -50px;
+    margin-left: 180px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.link-div{
+    /* border: 2px solid red; */
+    width: 90px;
+    margin-left: 17px;
+    text-align: center;
+}
+.link-div img{
+    /* border: 2px solid red; */
+    width: 70px;
+    height: 60px;
+    margin-left: 12px;
+    border-radius: 10px;
+}
+.link-div a{
+    text-decoration: none;
+    /* border: 2px solid red; */
+    font-size: larger;
+    color: blue;
+}
+.link-div:hover{
+    text-decoration-line: underline;
+    color: black;
+}
