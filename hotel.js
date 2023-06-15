@@ -19,13 +19,18 @@ let dist = document.getElementById("dist");
 let globle = [];
 let reviewFilter = document.getElementById("filter");
 
+let star2 = document.getElementById("twoStar");
+let star3 = document.getElementById("threeStar");
+let star4 = document.getElementById("fourStar");
+let star5 = document.getElementById("fiveStar");
+
 window.addEventListener("load", fetchData(1))
 async function fetchData(Page) {
     try {
         let responce = await fetch(`${baseUrl}?_page=${Page}&_limit=10`)
         let total = responce.headers.get(`X-Total-Count`)
         pagination.innerHTML = "";
-        let page = Math.ceil(total / 10);
+        let page = Math.ceil(total/10);
 
         for (let i = 1; i <= page; i++) {
             pagination.append(creatBtn(i))
@@ -49,7 +54,9 @@ function creatBtn(id) {
 
     return btn;
 }
+
 function displayHotel(data) {
+
     mainSection.innerHTML = "";
     let cardlist = document.createElement("div")
     cardlist.classList.add("cardList");
