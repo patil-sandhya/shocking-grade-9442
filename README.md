@@ -7,7 +7,7 @@
 Sandhya Patil   -
 Anusha          -
 Khelsai Rajwade - fw24_054
-Vinay Thakur    -
+Vinay Thakur    -  fw24_063
 Shubham Saini   -
 
 
