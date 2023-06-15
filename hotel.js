@@ -39,9 +39,6 @@ async function fetchData(Page) {
     }
 }
 
-
-
-
 function creatBtn(id) {
 
     let btn = document.createElement("button");
@@ -67,7 +64,7 @@ function displayHotel(data) {
 function displaycard(hotel) {
 
     let card = document.createElement("div");
-    card.classList.add("card");
+    card.id="card"
 
     let imagediv = document.createElement("div");
     imagediv.classList.add("imagediv");
@@ -160,7 +157,7 @@ sortAtoZ.addEventListener("click", function () {
     sH = sH.sort(function (a, b) {
         return a.price - b.price
     })
-    console.log(sH)
+
     displayHotel(sH)
 })
 
@@ -169,7 +166,7 @@ sortZtoA.addEventListener("click", function () {
     sH = sH.sort(function (a, b) {
         return b.price - a.price
     })
-    console.log(sH)
+
     displayHotel(sH)
 })
 
@@ -178,7 +175,7 @@ dist.addEventListener("click", function () {
     sH = sH.sort(function (a, b) {
         return a.distance - b.distance
     })
-    console.log(sH)
+ 
     displayHotel(sH)
 })
 
