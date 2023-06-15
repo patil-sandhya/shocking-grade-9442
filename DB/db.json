@@ -1,0 +1,59 @@
+{
+    "destinations":[
+        {   "id": 1,
+            "img": "./assets/images/img-1.jpg",
+            "price": 239.00,
+            "desc": "Original Orange Body Lotion For Kids With Orange & Shea Butter - 400 ml"
+        },
+        {   "id": 2,
+            "img": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/8588261a.webp",
+            "price": 489.00,
+            "desc": "Major Mango Body Lotion For Kids with Mango Butter & Milk Protein - 400 ml"
+        },
+        {   "id": 3,
+            "img": "https://honasa-mamaearth-production.imgix.net/b/r/brave-blueberry-body-lotion.jpg?auto=compress&fit=scale&w=400&h=400",
+            "price": 79.00,
+            "desc": "Brave Blueberry Body Lotion For Kids with Blueberry and Kokum Butter– 400 ml"
+        },
+        {
+            "id": 4,
+            "img": "https://honasa-mamaearth-production.imgix.net/a/g/agent_apple-body-lotion.jpg?auto=compress&fit=scale&w=400&h=400",
+            "price": 49.00,
+            "desc": "Agent Apple Body Lotion for Kids with Apple & Oat Milk– 400 ml"
+        }
+    ],
+    "users": [
+        {
+          "id": 1,
+          "name": "Gertrudis Tatterton",
+          "age": 18,
+          "email": "gtatterton0@ehow.com"
+        },
+        {
+          "id": 2,
+          "name": "Gail Newbatt",
+          "age": 53,
+          "email": "gnewbatt1@un.org"
+        },
+        {
+          "id": 3,
+          "name": "Walliw Wilstead",
+          "age": 49,
+          "email": "wwilstead2@tripadvisor.com"
+        },
+        {
+          "id": 4,
+          "name": "Abran Proback",
+          "age": 29,
+          "email": "aproback3@theglobeandmail.com"
+        },
+        {
+          "id": 5,
+          "name": "Roda Chappelow",
+          "age": 31,
+          "email": "rchappelow4@oaic.gov.au"
+        }
+      ]
+
+}
+   
