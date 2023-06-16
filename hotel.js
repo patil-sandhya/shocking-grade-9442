@@ -116,11 +116,7 @@ function displaycard(hotel) {
     buy.textContent = "Book Now"
 
     let stars = document.createElement("i")
-    stars.innerHTML = `<span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>`
+    stars.textContent = `Rating ${hotel.rating}`
     buy.addEventListener("click", () => {
        
             Swal.fire({
@@ -198,4 +194,31 @@ reviewFilter.addEventListener("change", () => {
         displayHotel(data)
     }
 
+})
+star2.addEventListener("click",()=>{
+    let data = globle.filter(el=>{
+        if(el.rating<5){
+            return true;
+        }
+    })
+    displayHotel(data);
+})
+
+star3.addEventListener("click",()=>{
+    let data = globle.filter(el=>{
+        return (el.rating>=5 && el.rating<7)
+    })
+    displayHotel(data);
+})
+star4.addEventListener("click",()=>{
+    let data = globle.filter(el=>{
+        return (el.rating>=7 && el.rating<9)
+    })
+    displayHotel(data);
+})
+star5.addEventListener("click",()=>{
+    let data = globle.filter(el=>{
+        return (el.rating>9)
+    })
+    displayHotel(data);
 })
