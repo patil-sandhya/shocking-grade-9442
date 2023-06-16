@@ -12,8 +12,8 @@
     
 <nav></nav>
 <div id="search-container">
-   <div id="innerdiv" class="d-flex p-2">
-    <div id="locatin">
+   <div id="innerdiv" class="d-flex p-2 d-flex justify-content-evenly">
+    <div id="location" class="">
         <select name="" id="local">
             <option value="">Area , Locatin</option>
             <option value="Wonderful">Singapore</option>
@@ -24,15 +24,18 @@
         </select>
     </div>
     <div id="date"></div>
-    <label for="date">Start Date
+    <label for="date"><span class="text-primary">Check In</span>
         <input type="date" id="start">
     </label>
-    <label for="date"> End Date
+    <label for="date"> <span class="text-primary">Check Out</span>
         <input type="date" id="end">
     </label>
     <div id="room">
-        Guest
-        <label for="room"><input type="text">Guest</label>
+        <select name="guest" id="guest">
+            <option value="">Guest</option>
+            <option value="adult">Adult 2</option>
+            <option value="child">Child</option>
+        </select>
     </div>
    </div>
 </div>
