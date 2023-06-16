@@ -11,8 +11,39 @@
 <body>
     
 <nav></nav>
+<div id="search-container">
+   <div id="innerdiv" class="d-flex p-2">
+    <div id="locatin">
+        <select name="" id="local">
+            <option value="">Area , Locatin</option>
+            <option value="Wonderful">Singapore</option>
+            <option value="Excellent">New York</option>
+            <option value="Very Good">England</option>
+            <option value="Good">Delhi</option>
 
+        </select>
+    </div>
+    <div id="date"></div>
+    <label for="date">Start Date
+        <input type="date" id="start">
+    </label>
+    <label for="date"> End Date
+        <input type="date" id="end">
+    </label>
+    <div id="room">
+        Guest
+        <label for="room"><input type="text">Guest</label>
+    </div>
+   </div>
+</div>
+<div id="sort">
+    <h4>SORT BY :</h4>
+    <button id="dist">Nearby me</button>
+    <button id="atoz">Price Low to High</button>
+    <button id="ztoa">Price High to Low</button>
+</div>
 <div id="produnct" class="bg-light bg-gradient">
+   
     <div id="left">
         <div id="filterPart">
             <p>Filter by:</p>
@@ -32,49 +63,35 @@
             <hr>
         </div>
         <div id="discount">
-            <h4>Discount</h4>
-            <div id="checkbox">
-                <li>
-                    <input type="checkbox" id="Discount50" class="checkbox"><span>50%</span>
-                </li>
-                <li>
-                    <input type="checkbox" id="Discount30" class="checkbox"><span>30%</span>
-                </li>
-                <li>
-                    <input type="checkbox" id="Discount10" class="checkbox"><span>10%</span>
-                </li>
-
-            </div>
-
-
+          
             <div id="star">
-                <div>
-                    <input type="checkbox" id="Discount50 twoStar" class="checkbox"><span class="fa fa-star checked"></span>
+                <div> 
+                    <input type="checkbox" id="twoStar" class="checkbox"><span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star "></span>
                     <span class="fa fa-star "></span>
                     <span class="fa fa-star"></span>
                 </div>
                 <div>
-                    <input type="checkbox" id="Discount50 threeStar" class="checkbox"><span class="fa fa-star checked"></span>
+                    <input type="checkbox" id="threeStar" class="checkbox"><span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star "></span>
                     <span class="fa fa-star"></span>
                 </div>
                 <div>
-                    <input type="checkbox" id="Discount50 fourStar" class="checkbox"><span class="fa fa-star checked"></span>
+                    <input type="checkbox" id="fourStar" class="checkbox"><span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star"></span>
                 </div>
                 <div>
-                    <input type="checkbox" id="Discount50 fiveStar" class="checkbox"><span class="fa fa-star checked"></span>
+                    <input type="checkbox" id="fiveStar" class="checkbox"><span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star checked"></span>
                 </div>
                 <div>
                     <input type="checkbox" class="checkbox"><span>Not classified</span>
@@ -94,7 +111,7 @@
                     <input type="checkbox" class="checkbox1"><span>Wellness & Spa Hotels</span>
                 </div>
                 <div>
-                    <input type="checkbox" class="checkbox1"><span>Design, Lifestyle & Boutique hotels</span>
+                    <input type="checkbox" class="checkbox1"><span>Design, Lifestyle </span>
                 </div>
                 <div>
                     <input type="checkbox" class="checkbox1"><span>Waterfront hotels</span>
@@ -125,14 +142,12 @@
                     <input type="checkbox" class="checkbox1"><span>Breakfast buffet</span>
                 </div>
                 <div>
-                    <input type="checkbox" class="checkbox1"><span>Breakfast in the room (additional charge)</span>
+                    <input type="checkbox" class="checkbox1"><span>Breakfast in the room</span>
                 </div>
                 <div>
                     <input type="checkbox" class="checkbox1"><span>Restaurant</span>
                 </div>
-                <div>
-                    <input type="checkbox" class="checkbox1"><span>Organically produced food</span>
-                </div>
+              
             </div>
 
             <div id="region">
@@ -153,7 +168,7 @@
                     <input type="checkbox" class="checkbox1"><span>Bernese Oberland </span>
                 </div>
                 <div>
-                    <input type="checkbox" class="checkbox1"><span>Eastern Switzerland / Liechtenstein</span>
+                    <input type="checkbox" class="checkbox1"><span>Eastern Switzerland</span>
                 </div>
                 <div>
                     <input type="checkbox" class="checkbox1"><span>Fribourg (region)</span>
@@ -214,11 +229,6 @@
             </div>
         </div>
     <div id="right">
-        <div id="sort">
-            <button id="dist">Nearby me</button>
-            <button id="atoz">Sort By Price Low to High</button>
-            <button id="ztoa">Sort By Price High to Low</button>
-        </div>
         <div id="container"></div>
         <div id="pagination"></div>
     </div>
