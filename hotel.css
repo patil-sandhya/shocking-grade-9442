@@ -1,15 +1,27 @@
-*{margin: 0;
-    padding: 0;
+*{ box-sizing: border-box;
    
 }
 body{
-    box-sizing: border-box;
+   
+    background: #f2f2f2;
+    padding: 0;
+    margin: 0;
+    color: #4a4a4a;
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+p{
+    font-size: calc(var(--font-scale, 1) * 16.5px);
+    line-height: 23px
 }
 #search-container{
     
     height: 170px;
     background-image: linear-gradient(rgb(0, 0, 23),rgb(0, 0, 105));
 
+}
+#date{
+    color: #008cff;
 }
 #sort {
     width:100%;
@@ -19,7 +31,7 @@ body{
     padding-left: 3%;
     padding-right: 3%;
     background-color:#E4FBFC;
-    /* background-image: linear-gradient(black,darkBlue); */
+   
 }
 
 #atoz {
@@ -48,6 +60,7 @@ body{
 
 #left p {
     color: rgb(107, 107, 107);
+  
 }
 
 #checkbox span {
@@ -91,6 +104,11 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 29px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 #8a6b7614;
+    cursor: pointer;
+    position: relative
   
 }
 
@@ -99,7 +117,7 @@ body{
 }
 
 #card:hover {
-    border: 2px solid rgb(255, 233, 233);
+    border: 1px solid rgb(255, 233, 233);
     background-color: rgb(226, 250, 242);
 }
 
@@ -119,7 +137,8 @@ body{
 
 .cardbody h4 {
 
-    color: darkgreen;
+    color: rgb(43, 150, 222);
+
 }
 
 .cardbuy {

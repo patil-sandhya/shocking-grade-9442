@@ -92,7 +92,7 @@ function displaycard(hotel) {
     description.textContent = hotel.details;
 
     let distance = document.createElement("p");
-    distance.textContent = `Distance : ${hotel.distance}m`;
+    distance.textContent = `Distance : ${hotel.distance} m`;
 
     let rateing = document.createElement("p");
     rateing.textContent = hotel.rateing;
@@ -115,7 +115,7 @@ function displaycard(hotel) {
     buy.classList.add("buybtn");
     buy.textContent = "Book Now"
 
-    let stars = document.createElement("i")
+    let stars = document.createElement("p")
     stars.textContent = `Rating ${hotel.rating}`
     buy.addEventListener("click", () => {
        
