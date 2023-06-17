@@ -24,7 +24,13 @@ p{
     width:200px;
     height: 40px;
 }
+#innerdiv div{
+    margin-top: 20px;
+}
 
+#innerdiv input, select{
+    border: 3px solid  #008cff;
+}
 #search{
     display: flex;
     justify-content: center;
@@ -326,13 +332,17 @@ border:none;
         display: none;
 
     }
+    #search-container{
+        height: 50vh;
+        margin: auto;
+    }
     #innerdiv{
         width: 80%;
-        display: flex;
-        flex-direction: column;
+        display:flex;
+       flex-direction: column;
         margin: auto;
         justify-content: center;
-        border:1px solid red;
+       align-items: center;
     }
     #sort {
         flex-direction: column;
