@@ -23,6 +23,8 @@ let star2 = document.getElementById("twoStar");
 let star3 = document.getElementById("threeStar");
 let star4 = document.getElementById("fourStar");
 let star5 = document.getElementById("fiveStar");
+let search_input = document.getElementById("search-input");
+let searchBtn =  document.getElementById("search-btn");
 
 window.addEventListener("load", fetchData(1))
 async function fetchData(Page) {
@@ -130,7 +132,7 @@ function displaycard(hotel) {
               })
             hotelLS.push({ ...hotel, day: 1, Guest: 0 });
             localStorage.setItem("hotelCard", JSON.stringify(hotelLS))
-            window.location.href="./booking.html"
+            window.location.href="./card.html"
       
     })
     cardbuy.append(stars, price, tax, buy)
@@ -222,3 +224,18 @@ star5.addEventListener("click",()=>{
     })
     displayHotel(data);
 })
+
+// searchBtn.addEventListener("click",()=>{
+// fetchSearch(`${baseUrl}?${search_input.value}`)
+// })
+
+// async function fetchSearch(url){
+//     try {
+//         let res = await fetch(url)
+        
+//         let data = res.json();
+//         displayHotel(data)
+//     } catch (error) {
+//      console.log(error);   
+//     }
+// }
