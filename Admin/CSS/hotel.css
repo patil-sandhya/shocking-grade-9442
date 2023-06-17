@@ -395,3 +395,56 @@ main>h1{
     }
     
 }
+
+.pageBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 5%;
+    margin-left:3%;
+    border-color: rgb(179, 164, 6);
+    background-color: rgb(248, 190, 171);
+
+}
+
+.pageBtn:hover {
+    background-color: darkgray;
+    border: 3px solid gainsboro;
+}
+
+#headSection{
+    display: flex;
+    margin-bottom: 10px;
+}
+.topright{
+    position:absolute;
+    top:10px;
+    right:5px;
+}
+.sortBtn{
+    background-color: #3f52de;
+    color: white;
+    height: 40px;
+    width: 140px;
+    border-radius: 10px; 
+}
+
+#filter {
+    width: 150px;
+   height: 40px;
+   padding: 5px;
+   border: 2px solid rgb(68, 159, 230);
+   border-radius: 10px;
+}
+#filter:hover{
+    border:3px solid rgb(6, 56, 101);
+}
+.filterSpan{
+    font-size: 15px;
+}
+
+#pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}

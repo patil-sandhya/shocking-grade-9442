@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/blogs.css">
-    <link rel="stylesheet" href="../hotel.css">
+    <link rel="stylesheet" href="./CSS/hotel.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -58,12 +57,28 @@
         
         <!-- ------------------------  MAIN --------------------------- -->
         <main>
-            <h1>Hotels</h1>
+            <div id="headSection">
+                <h1>Hotels</h1>
+                <div class="topright">
+                   <span class="filterSpan">Filter By :</span>  <select id="filter">
+                        <option value="">Review</option>
+                        <option value="Wonderful">Wonderful</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Good">Good</option>
+                    </select>
+                    <button class="sortBtn" id="lth">Price Low To High</button> 
+                    <button class="sortBtn" id="htl">Price High To Low</button> 
+                </div>
+                
+            </div>
             
             <div id="product-container">
-                <div id="container"></div>
+                
             </div>
-            <div id="pagination"></div>
+            <div id="pagination">
+                
+            </div>
 
         </main>
 

@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" href="./Images/FavIcon.png">
-    <title>Edit Blog</title>
+    <title>Blogs</title>
 </head>
 <body>
     <div class="container">
@@ -57,18 +57,21 @@
         <!-- ------------------------  MAIN --------------------------- -->
         <main>
             <div id="container">
-                <h1>Update Service</h1>
+                <h1>Add Hotel</h1>
         <form id="myform">
-            <!-- <input type="number" name="product-id" id="product-id" placeholder="Enter Product Id"> -->
-            <input type="text" name="itemId" id="itemId" >
             <label for="">Image</label>
-            <input type="text" name="blgImg" id="blgImg" >
-            <label for="">Title</label>
+            <input type="text" name="hotelImg" id="hotelImg" >
+            <label for="">Name</label>
             <input type="text" name="title" id="title" >
-            
-            <label for="">Description</label>
+            <label for="">Price</label>
+            <input type="text" name="price" id="price" >
+            <label for="">Tax</label>
+            <input type="text" name="tax" id="tax" >
+            <label for="">Distance</label>
+            <input type="text" name="distance" id="distance" >
+            <label for="">Details</label>
             <textarea rows="4" cols="50" id="description" name="description"></textarea>
-            <input type="submit" value="Update">
+            <input type="submit" value="Add">
         </form>
             </div>
         </main>
@@ -78,5 +81,5 @@
         
     </div>
 </body>
-<script src="./Script/editBlog.js"></script>
+<script src="./Script/addHotel.js"></script>
 </html>

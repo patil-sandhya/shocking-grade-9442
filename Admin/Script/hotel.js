@@ -13,16 +13,24 @@ closeBtn.addEventListener("click", () => {
 
 let productsContainer = document.getElementById("product-container");
 let baseUrl = `https://hid-food-apii.onrender.com/product_data`;
+let pagination = document.getElementById("pagination");
 let mainSection = document.getElementById("container");
-let hotelLS = JSON.parse(localStorage.getItem("hotelCard")) || [];
+let lthBtn = document.getElementById("lth");
+let htlBtn = document.getElementById("htl");
+let filterBtn = document.getElementById('filter')
+// let productsArray = JSON.parse(localStorage.getItem("products")) || [];
 // let productsArray = JSON.parse(localStorage.getItem("products")) || [];
 
-window.addEventListener("load", fetchData(1))
+window.addEventListener("load", function(e){
+    e.preventDefault();
 
-async function fetchData(Page) {
+    fetchHotels(`${baseUrl}?_page=1&_limit=10`);
+});
+let pageData = []
+async function fetchHotels(url){
     try {
-        let responce = await fetch(`${baseUrl}?_page=${Page}&_limit=10`)
-        let total = responce.headers.get(`X-Total-Count`)
+       let res = await fetch(url)
+       let total = res.headers.get(`X-Total-Count`)
         pagination.innerHTML = "";
         let page = Math.ceil(total/10);
 
@@ -30,9 +38,10 @@ async function fetchData(Page) {
             pagination.append(creatBtn(i))
         }
 
-        let data = await responce.json();
-        globle = data;
-        displayHotel(data);
+       let data = await res.json()
+       pageData = data
+       displayHotels(pageData)
+       console.log(data) 
     } catch (error) {
         console.log(error)
     }
@@ -43,159 +52,98 @@ function creatBtn(id) {
     let btn = document.createElement("button");
     btn.classList.add("pageBtn");
     btn.textContent = id;
-    btn.addEventListener("click", () => fetchData(id))
-
-
+    btn.addEventListener("click", () => fetchHotels(`${baseUrl}?_page=${id}&_limit=10`))
     return btn;
 }
-
-function displayHotel(data) {
-
-    mainSection.innerHTML = "";
-    let cardlist = document.createElement("div")
-    cardlist.classList.add("cardList");
-
-    data.forEach(hotel => {
-
-        cardlist.append(displaycard(hotel));
-    })
-    mainSection.append(cardlist);
-}
-
-function displaycard(hotel) {
-
-    let card = document.createElement("div");
-    card.id="card"
-
-    let imagediv = document.createElement("div");
-    imagediv.classList.add("imagediv");
-
-    let image = document.createElement("img");
-    image.src = hotel.avatar;
-    image.setAttribute("alt", hotel.name);
-
-    imagediv.append(image);
-
-    let cardbody = document.createElement("div");
-    cardbody.classList.add("cardbody");
-
-    let name = document.createElement("h2");
-    name.textContent = hotel.name;
-
-    let description = document.createElement("p");
-    description.textContent = hotel.details;
-
-    let distance = document.createElement("p");
-    distance.textContent = `Distance : ${hotel.distance}m`;
-
-    let rateing = document.createElement("p");
-    rateing.textContent = hotel.rateing;
-
-    let review = document.createElement("h4");
-    review.textContent = `Review of Hotel :- ${hotel.review}`;
-
-    cardbody.append(name, description, distance, review)
-
-    let cardbuy = document.createElement("div");
-    cardbuy.classList.add("cardbuy");
-
-    let price = document.createElement("p");
-    price.textContent = `Price : ₹ ${hotel.price}`;
-
-    let tax = document.createElement("p")
-    tax.textContent = `Tax : ₹ ${hotel.tax}`;
-
-    let buy = document.createElement("button");
-    buy.classList.add("buybtn");
-    buy.textContent = "Book Now"
-
-    let stars = document.createElement("i")
-    stars.textContent = `Rating ${hotel.rating}`
-    buy.addEventListener("click", () => {
-       
-            Swal.fire({
-                title: `${hotel.name}`,
-                text: `Is Select For Booking`,
-                imageUrl: `${hotel.avatar}`,
-                imageWidth: 400,
-                imageHeight: 200,
-                imageAlt: 'Custom image',
-               
-              })
-            hotelLS.push({ ...hotel, day: 1, Guest: 0 });
-            localStorage.setItem("hotelCard", JSON.stringify(hotelLS))
-            window.location.href="./booking.html"
-      
-    })
-    cardbuy.append(stars, price, tax, buy)
-
-
-
-    card.append(imagediv, cardbody, cardbuy)
-    return card;
-}
-
 // displayProducts(productsArray);
 
-function displayProducts(data){
+function displayHotels(data){
     productsContainer.innerHTML = "";
 
-    data.forEach((product, index) => {
-        //console.log(product.description)
-        let productCard = document.createElement("div");
-        productCard.setAttribute("class", "product-card");
-
-        let productImg = document.createElement("img");
-        productImg.setAttribute("class", "product-img");
-        productImg.src = product.img;
-
-        let productDesc = document.createElement("p");
-        productDesc.setAttribute("class", "product-desc");
-        productDesc.innerText = product.description;
-
-        let date = document.createElement("p");
-        date.setAttribute("class", "product-desc");
-        date.innerText = product.date;
-
-        let productName = document.createElement("h3");
-        productName.setAttribute("class", "product-category");
-        productName.innerText = product.title;
-        
-
-        let removeButton = document.createElement("button");
-        removeButton.innerText = "Remove";
-        removeButton.setAttribute("class", "remove-btn");
-
-        let editButton = document.createElement("button");
-        editButton.innerText = "Edit";
-        editButton.setAttribute("class", "edit-btn");
-        removeButton.addEventListener("click", function(){
-            removeProduct(product.id);
-        })
-
-        editButton.addEventListener("click", function(){
-            localStorage.setItem("editBlog", product.id)
-            window.location.href="editBlog.html";
-
-        })
-
-        productCard.append(productImg, productName, date, productDesc,  removeButton, editButton);
-        productsContainer.append(productCard);
+    data.forEach((item, index) => {
+        productsContainer.append(createCard(item));
     });
 }
 
-function removeProduct(productid){
-    fetch(`http://localhost:3000/blogs/${productid}`, {
-        method : 'DELETE',
-        headers : {
-            'Content-type' : 'application/json'
-        }
+function createCard(product){
+    let productCard = document.createElement("div");
+    productCard.setAttribute("class", "product-card");
+
+    let productImg = document.createElement("img");
+    productImg.setAttribute("class", "product-img");
+    productImg.src = product.avatar;
+
+    let productDesc = document.createElement("p");
+    productDesc.setAttribute("class", "product-desc");
+    productDesc.innerText = product.details;
+
+    let productName = document.createElement("h2");
+    productName.setAttribute("class", "product-category");
+    productName.innerText = product.name;
+    
+    let productPrice = document.createElement("h4");
+    productPrice.setAttribute("class", "product-desc");
+    productPrice.innerText = `₹ ${product.price}`;
+
+    let removeButton = document.createElement("button");
+    removeButton.innerText = "Remove";
+    removeButton.setAttribute("class", "remove-btn");
+
+    let editButton = document.createElement("button");
+    editButton.innerText = "Edit";
+    editButton.setAttribute("class", "edit-btn");
+
+    removeButton.addEventListener("click", function(){
+        deleteHotel(product.id);
     })
-    .then((res) => {
-        return res.json();
+
+    editButton.addEventListener("click", function(){
+        localStorage.setItem("editItem", product.id)
+        window.location.href="editHotel.html";
     })
-    .then((data) => {
-        console.log(data);
-        fetchProducts();
-    })
+    productCard.append(productImg, productName, productDesc,productPrice, removeButton, editButton);
+
+    return productCard
 }
+
+lthBtn.addEventListener("click", function () {
+    let sH = [...pageData]
+    sH = sH.sort(function (a, b) {
+        return a.price - b.price
+    })
+
+    displayHotels(sH)
+})
+
+htlBtn.addEventListener("click", function () {
+    let sH = [...pageData]
+    sH = sH.sort(function (a, b) {
+        return b.price - a.price
+    })
+
+    displayHotels(sH)
+})
+
+filterBtn.addEventListener("change", () => {
+    if (filterBtn.value == "") {
+        displayHotel(pageData);
+    }
+    else {
+        fetchHotels(`${baseUrl}?review=${filterBtn.value}`)
+    }
+
+})
+
+async function deleteHotel(hotelId){
+    try {
+      let res = await fetch(`${baseUrl}/${hotelId}`,{
+        method:"DELETE",
+        headers:{
+          "Content-type":"application/json"
+        }
+      })
+      fetchHotels(`${baseUrl}?_page=1&_limit=10`);
+    } catch (error) {
+      console.log(error)
+    }
+  }
