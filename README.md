@@ -34,12 +34,31 @@ It typically includes fields for users to enter their email address and password
 
 # Destination Page
 
+### Popular Destinations
+
+<img width="710" alt="image" src="https://i.postimg.cc/X30ZvCsr/destination-1.png" />
+
+This section highlights the most popular travel destinations or frequently visited places. It could include popular cities, countries, or specific attractions that are highly sought after by travelers. The purpose is to provide quick access to well-known and desired locations.
+
+### International Tour Slide Bar: 
+
+<img width="710" alt="image" src="https://i.postimg.cc/y7JQ8tNX/des-slide2.png"/>
+
+This slide bar allows users to navigate through different international tour options. It may display images or brief descriptions of various tours or packages. Users can slide through the options to explore different destinations and find relevant information about each tour.
+
+
+### Sorting by Price: 
+
+<img width="710" alt="image" src="https://i.postimg.cc/x1SsXGgy/des-sort.png" />
+
+This feature enables users to sort the tour destinations based on their prices. It provides options to filter or arrange the destinations in ascending or descending order, according to the cost of the tours. This functionality helps users find destinations that fit their budget preferences and facilitates easy comparison between different tour packages.
+
 # Group Project 
 **Members**     **Student code**
 Sandhya Patil   - fp11_067 |
-Anusha          -  |
+Anusha          - fw25_218 |
 Khelsai Rajwade - fw24_054 |
-Vinay Thakur    -  fw24_063 
+Vinay Thakur    - fw24_063 
 
 
 
