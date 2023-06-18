@@ -29,6 +29,9 @@ It typically includes fields for users to enter their email address and password
 # Landing Page
 
 # Home Page
+This is home page
+![Screenshot 2023-06-18 231056](https://github.com/patil-sandhya/shocking-grade-9442/assets/117443062/6169aec1-83e8-4443-ae8b-01d026087f2c)
+
 
 # Hotel Page
 
