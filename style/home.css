@@ -19,14 +19,14 @@ body{
 }
  nav{
      border: 2px solid darkblue;
-     /* margin-top: -150px; */
+
      height: 110px;
      width: 100%;
      display: flex;
      background-image: linear-gradient(black,darkBlue);
      position: sticky;
      top: 0;
-     /* change */
+
 
 }
 
@@ -34,20 +34,18 @@ nav img{
      height: 110px;
     margin-left: 30px;
     margin-top: 5px;
-    /* border: 2px solid black; */
-    /* border-radius: 50px; */
+
     
 }
 
   .tags{
-     /* border: 2px solid darkblue; */
-     /* height: 40px; */
+ 
      width: 1000px;
      margin-top: 50px;
      margin-left: 300px;
      display: flex;
      justify-content: space-between;
-     /* background-image: linear-gradient(black,darkBlue); */
+
      position: fixed;
      top: 0;
     }
