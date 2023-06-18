@@ -4,7 +4,7 @@
 # What is Dream Destine?
 Dream Destine is a travel website, where we aim to transform your wanderlust into extraordinary experiences. We offer a comprehensive range of services, including meticulously crafted tour packages and hassle-free hotel bookings, ensuring that your journey is nothing short of unforgettable.
 
-Features & Pages -
+Pages -
 Index Page | 
 Home Page |
 Login Page |
