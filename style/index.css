@@ -30,6 +30,7 @@ body{
     text-decoration: none;
     font-size: 20px;
     margin-left: 50px;
+    clear: right;
   }
   
   .topnav a:hover {
@@ -57,9 +58,56 @@ body{
       height: 200px;
    }
 
-   /* marquee img:hover{
-    transform: scale(2,2);
-   } */
+     label{
+       margin: 0 40 0 0;
+       font-size: 26px;
+       line-height: 70px;
+       display: none;
+       width: 26px;
+       float: left;
+     }
+
+     #toggle{
+         display: none;
+     }
+   @media only screen and (max-width: 800px){
+      
+        .topnav img{
+          display: none;
+        }
+        .container h1{
+           font-size: 50px;
+        }
+
+        marquee img{
+          height: 100px;
+        }
+
+        label{
+          display: block;
+          cursor: pointer;
+        }
+
+        .topnav{
+          text-align: center;
+          width: 90%;
+          display: none;
+        }
+
+        .topnav a{
+           display: block;
+           border-bottom: 1px solid #EAEAEB;
+           margin: 0;
+        }
+
+        #toggle:checked + .topnav{
+          display: block;
+        }
+   }
+
+
+
+
 
 
 
