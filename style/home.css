@@ -5,13 +5,16 @@
 body{
     margin: 0%;
 }
+
+
 .container{
      border: 2px solid white;
-     height: 500px;
+     height: 550px;
      width: auto;
      background-image: linear-gradient(black,darkBlue);
-     margin-top: 150px;
-     /* change */
+     margin-top: 130px;
+    
+
 
 }
 .container nav{
@@ -26,6 +29,7 @@ body{
      /* change */
 
 }
+
 nav img{
      height: 100px;
     margin-left: 50px;
@@ -33,19 +37,21 @@ nav img{
     border: 2px solid black;
     position:sticky;
 }
+
 nav .tags{
      border: 2px solid darkblue;
      height: 40px;
      width: 1000px;
-     margin-top: 20px;
+     margin-top: 50px;
      margin-left: 300px;
      display: flex;
      justify-content: space-between;
      background-image: linear-gradient(black,darkBlue);
      position: fixed;
      top: 0%;
-     /* change */
+
 }
+
 
   
 nav a{
@@ -53,19 +59,23 @@ nav a{
     color: white;
     font-size: 20px;
 }
+
 nav a:hover{
     color: white;
 }
 
+
 .container .items{
-    /* border: 2px solid red; */
+    border: 2px solid red;
     background-color: white;
-    margin-top: 120px;
+    margin-top: 110px;
     height: 300px;
     width: 80%;
     margin-left: 140px;
     border-radius: 20px;
+
 }
+
 .container .items .booking{
     border: 2px solid lightblue;
     background-color: white;
@@ -76,16 +86,17 @@ nav a:hover{
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
+   }
 
-    
 
-}
-.link-div{
+     .link-div {
     /* border: 2px solid red; */
     width: 90px;
     margin-left: 17px;
     text-align: center;
-}
+    }
+
+
 .link-div img{
     /* border: 2px solid red; */
     width: 70px;
@@ -115,10 +126,10 @@ nav a:hover{
      background-color: #0c5deb;
      text-align: center;
      color: white;
-     font-size: 25px;
+     font-size: 30px;
 }
 .search h3{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .items .location{
@@ -183,7 +194,21 @@ nav a:hover{
     margin-left: 20px;
  }
 
+  .two input{
+    margin-top: 20px;
+    width: 150px;
+    border-radius: 20px;
+    height: 35px;
+    margin-left: 3px;
+  }
 
+  .three input{
+    margin-top: 20px;
+    width: 150px;
+    border-radius: 20px;
+    height: 35px;
+    margin-left: 3px;
+  }
  
 
 
@@ -209,7 +234,7 @@ nav a:hover{
  .miditems img{
         width: 270px;
         height: 200px;
-        
+
         border-radius: 25px;
  }
  .miditems > div{
