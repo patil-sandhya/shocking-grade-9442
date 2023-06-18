@@ -10,45 +10,46 @@ body{
 .container{
      border: 2px solid white;
      height: 550px;
-     width: auto;
+     width: 100%;
      background-image: linear-gradient(black,darkBlue);
-     margin-top: 130px;
+     margin-top: -10px;
     
 
 
 }
-.container nav{
+ nav{
      border: 2px solid darkblue;
-     margin-top: -150px;
-     height: 150px;
-     width: auto;
+     /* margin-top: -150px; */
+     height: 110px;
+     width: 100%;
      display: flex;
      background-image: linear-gradient(black,darkBlue);
      position: sticky;
-     top: 0%;
+     top: 0;
      /* change */
 
 }
 
 nav img{
-     height: 100px;
-    margin-left: 50px;
+     height: 110px;
+    margin-left: 30px;
     margin-top: 5px;
-    border: 2px solid black;
-    position:sticky;
+    /* border: 2px solid black; */
+    /* border-radius: 50px; */
+    
 }
 
-nav .tags{
-     border: 2px solid darkblue;
-     height: 40px;
+  .tags{
+     /* border: 2px solid darkblue; */
+     /* height: 40px; */
      width: 1000px;
      margin-top: 50px;
      margin-left: 300px;
      display: flex;
      justify-content: space-between;
-     background-image: linear-gradient(black,darkBlue);
+     /* background-image: linear-gradient(black,darkBlue); */
      position: fixed;
-     top: 0%;
+     top: 0;
 
 }
 
@@ -66,7 +67,7 @@ nav a:hover{
 
 
 .container .items{
-    border: 2px solid red;
+    border: 2px solid white;
     background-color: white;
     margin-top: 110px;
     height: 300px;
