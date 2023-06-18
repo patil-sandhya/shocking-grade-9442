@@ -14,7 +14,21 @@ Destination Page |
 Payment |
 Admin Dashboard
 
-**logo**
+# logo
+
+![deam destine](https://github.com/patil-sandhya/shocking-grade-9442/assets/117443062/4c69a57f-0746-4414-9899-04f968eee8c4)
+
+# Sign Up Page
+
+# Login Page
+
+# Landing Page
+
+# Home Page
+
+# Hotel Page
+
+# Destination Page
 
 # Group Project 
 **Members**     **Student code**
@@ -22,23 +36,7 @@ Sandhya Patil   -
 Anusha          -
 Khelsai Rajwade - fw24_054
 Vinay Thakur    -  fw24_063
-Shubham Saini   -
 
-
-
-*****************************Login & sign up********************
-
-
-
-************************landing and home page feature*************
-
-
-
-*****************Hotel and product page************************
-
-
-
-*************************Destination*************************
 
 
 
