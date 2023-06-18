@@ -2,6 +2,8 @@
 
 # Name Of The Project :- Dream Destine.
 
+**logo**
+
 # Group Project 
 **Members**     **Student code**
 Sandhya Patil   -
@@ -11,5 +13,19 @@ Vinay Thakur    -  fw24_063
 Shubham Saini   -
 
 
+
+*****************************Login & sign up********************
+
+
+
+************************landing and home page feature*************
+
+
+
+*****************Hotel and product page************************
+
+
+
+*************************Destination*************************
 
 
