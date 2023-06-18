@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Destine</title>
+    <link rel="icon" href="./Admin/Images/dremDestine.png">
     <link rel="stylesheet" href="style/home.css">
 </head>
 <body>
-  
+  <label for="toggle">&#9776;</label>
+   <input type="checkbox" id="toggle"/>
+   
   <nav>
     <div id="logo">
-       <Img src="Images/deam destine.png"></Img>
+       <a href="index.html"><Img src="Images/deam destine.png"></Img></a>
     </div> 
     <div class="tags">
        <a href="./index.html">HOME</a>
-       <a href="#flight">HOTEL</a>
+       <a href="./hotel.html">HOTEL</a>
        <a href="./destination.html">DESTINATION</a>
        <a href="#contact">CONTACT</a>
        <a href="#About">ABOUT US</a>
@@ -26,31 +29,31 @@
              <div class="booking">
                 <div class="link-div">
                     <img class="flight" src="Images/DREAM DESTIME (1).png" alt="pic" />
-                    <a class="links" href="#flight">Flights</a>
+                    <a class="links" href="./hotel.html">Flights</a>
                   </div>
                 <div class="link-div">
                     <img class="hotel" src="Images/DREAM DESTIME (2).png" alt="pic" />
-                    <a class="links" href="#hotel">Hotels</a>
+                    <a class="links" href="./hotel.html">Hotels</a>
                   </div>
                 <div class="link-div">
                     <img class="bus" src="Images/bus.png.png" alt="pic" />
-                    <a class="links" href="#bus">Bus tour</a>
+                    <a class="links" href="./hotel.html">Bus tour</a>
                   </div>
                 <div class="link-div">
                     <img class="cab" src="Images/cab.png.png" alt="pic" />
-                    <a class="links" href="#bus">Cab tour</a>
+                    <a class="links" href="./destination.html">Cab tour</a>
                   </div>
                 <div class="link-div">
                     <img class="home" src="Images/home.png.png" alt="pic" />
-                    <a class="links" href="#bus">Homestays</a>
+                    <a class="links" href="./destination.html">Homestays</a>
                   </div>
                 <div class="link-div">
                     <img class="home" src="Images/chaterflight.png.png" alt="pic" />
-                    <a class="links" href="#chaterflight">CharterFlight</a>
+                    <a class="links" href="./hotel.html">CharterFlight</a>
                   </div>
                 <div class="link-div">
                     <img class="home" src="Images/hotairballoon.png.png" alt="pic" />
-                    <a class="links" href="#hotairballoon">HotAir</a>
+                    <a class="links" href="./hotel.html">HotAir</a>
                   </div>
             </div>
 
@@ -71,6 +74,10 @@
                  <option value="Germany">Germany</option>
                  <option value="England">England</option>
                  <option value="Japan">Japan</option>
+                 <option value="Russia">Russia</option>
+                 <option value="China">China</option>
+                 <option value="Australia">Australia</option>
+                 <option value="Bangkok">Bangkok</option>
                    </select>
                    <p>Booking With Us</p>
               </div>
@@ -78,20 +85,47 @@
                 <label class="select-loc">CHECK-IN ></label>
                      <br>
                     <input type="date" placeholder="select date here"/>
-                   <p>Happy Booking</p>
+                   <p>In Time Booking</p>
               </div>
               <div class="three">
                 <label class="select-loc">CHECK-OUT ></label>
                 <br>
                <input type="date" placeholder="select date here"/>
-              <p>Happy Booking</p>
+              <p>Out Time Booking</p>
               </div>
-              <div class="four"></div>
+              <div class="four">
+                  <label class="rooms">ROOMS & GUESTS</label>
+                  <select name="rooms" id="roomselect">
+                    <option value="">--Rooms Recuired--</option>
+                    <option value="room1">Room 1</option>
+                    <option value="roome2">Room 2</option>
+                    <option value="room3">Room 3</option>
+                    <option value="room4">Room 4</option>
+                    <option value="room5">Room 5</option>
+                  </select>
+                    
+                  <select name="adults" id="adults">
+                    <option value="">--No Of Peoples--</option>
+                     <option value="adults1">Adults 1</option>
+                     <option value="adults2">Adults 2</option>
+                     <option value="adults3">Adults 3</option>
+                     <option value="adults4">Adults 4</option>
+                     <option value="adults5">Adults 5</option>
+                  </select>
+                  <p>Fill Information</p>
+              </div>
               <div class="five">
                   <label class="price">PRICE PER NIGHT</label>
                   <select name="hotel" id="pri=hotel">
+                    <option value="">$0-$500, $500-$1500</option>
+                    <option value="amount">$0 - $500</option>
+                    <option value="amount">$500 - $1200</option>
+                    <option value="amount">$1200 - $2000</option>
+                    <option value="amount">$2000 - $3500</option>
+                    <option value="amount">$3500 - $5000</option>
                        
                   </select>
+                  <h3>Price of Rooms</h3>
               </div>
             </div>
         </div>
