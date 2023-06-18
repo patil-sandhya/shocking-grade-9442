@@ -9,12 +9,31 @@
  
     <script src="https://kit.fontawesome.com/11ec43b564.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+    <link rel="stylesheet" href="./style/slide-style.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/des.css">
 
 
+    
+
+    
+
+    <!--  -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <link rel="stylesheet" href="./assets/css/des.css"> -->
+   
+
+    <!-- <link rel="stylesheet" href="../style/hotel.css"> -->
+
+    
+    
 
 </head>
 
@@ -38,7 +57,7 @@
             <div class="popular-card">
 
               <figure class="card-img">
-                <img src="./assets/images/popular-1.jpg" alt="San miguel, italy" loading="lazy">
+                <img src="./Images/des-images/popular-1.jpg" alt="San miguel, italy" loading="lazy">
               </figure>
 
               <div class="card-content">
@@ -69,7 +88,7 @@
             <div class="popular-card">
 
               <figure class="card-img">
-                <img src="./assets/images/popular-2.jpg" alt="Burj khalifa, dubai" loading="lazy">
+                <img src="./Images/des-images/popular-2.jpg" alt="Burj khalifa, dubai" loading="lazy">
               </figure>
 
               <div class="card-content">
@@ -100,7 +119,7 @@
             <div class="popular-card">
 
               <figure class="card-img">
-                <img src="./assets/images/popular-3.jpg" alt="Kyoto temple, japan" loading="lazy">
+                <img src="./Images/des-images/popular-3.jpg" alt="Kyoto temple, japan" loading="lazy">
               </figure>
 
               <div class="card-content">
@@ -129,7 +148,7 @@
 
         </ul>
 
-        <button class="btn btn-primary">More destintion</button>
+        <button class="btn btn-primary"  id="moree">More destintion</button>
 
       </div>
     </section>
@@ -163,10 +182,26 @@
 </section>
  
 
-<h1 class="heading">popular packages</h1>
+<h1 class="heading">Popular Packages</h1>
+
+<div id="sort">
+  <h4>SORT BY :</h4>
+
+  <button id="atoz">Price Low to High</button>
+  <button id="ztoa">Price High to Low</button>
+</div>
+
+
+<div id="right">
+  <div id="container"></div>
+  <div id="pagination"></div>
+</div>
 
 </body>
-<script src="app.js"></script>
+<script src="./scripts/app.js"></script>
+<script src="./scripts/des.js"></script>
+
+
 </html>
 
 
