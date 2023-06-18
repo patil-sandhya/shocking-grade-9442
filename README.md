@@ -19,6 +19,7 @@ Admin Dashboard
 ![deam destine](https://github.com/patil-sandhya/shocking-grade-9442/assets/117443062/4c69a57f-0746-4414-9899-04f968eee8c4)
 
 # Sign Up Page
+![Screenshot 2023-06-18 192917](https://github.com/patil-sandhya/shocking-grade-9442/assets/117443062/c158e3ea-3801-4c2e-838f-b237de98e4f3)
 
 # Login Page
 
