@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/customer.css">
+    <link rel="stylesheet" href="./CSS/editService.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" href="./Images/FavIcon.png">
-    <title>Customers</title>
+    <title>Blogs</title>
 </head>
 <body>
     <div class="container">
@@ -57,22 +57,18 @@
         <!-- ------------------------  MAIN --------------------------- -->
         <main>
             <div id="container">
-                <h1>Our Customers</h1>
-               
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Address</th>
-                        <th>City</th>
-                        <th>State</th>
-                        <th>Mobile</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-
-                    </tbody>
-                </table>
+                <h1>Add Destination</h1>
+        <form id="myform">
+            <label for="">Image</label>
+            <input type="text" name="hotelImg" id="hotelImg" >
+            <label for="">Name</label>
+            <input type="text" name="title" id="title" >
+            <label for="">Price</label>
+            <input type="text" name="price" id="price" >
+            <label for="">Details</label>
+            <textarea rows="4" cols="50" id="description" name="description"></textarea>
+            <input type="submit" value="Add">
+        </form>
             </div>
         </main>
 
@@ -81,5 +77,5 @@
         
     </div>
 </body>
-<script src="./Script/customer.js"></script>
+<script src="./Script/addDestination.js"></script>
 </html>

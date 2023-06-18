@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/customer.css">
+    <link rel="stylesheet" href="./CSS/hotel.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" href="./Images/FavIcon.png">
-    <title>Customers</title>
+    <title>Blogs</title>
 </head>
 <body>
     <div class="container">
@@ -56,24 +57,23 @@
         
         <!-- ------------------------  MAIN --------------------------- -->
         <main>
-            <div id="container">
-                <h1>Our Customers</h1>
-               
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Address</th>
-                        <th>City</th>
-                        <th>State</th>
-                        <th>Mobile</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-
-                    </tbody>
-                </table>
+            <div id="headSection">
+                <h1>Destination</h1>
+                <div class="topright">
+                   
+                    <button class="sortBtn" id="lth">Price Low To High</button> 
+                    <button class="sortBtn" id="htl">Price High To Low</button> 
+                </div>
+                
             </div>
+            
+            <div id="product-container">
+                
+            </div>
+            <div id="pagination">
+                
+            </div>
+
         </main>
 
 
@@ -81,5 +81,5 @@
         
     </div>
 </body>
-<script src="./Script/customer.js"></script>
+<script src="./Script/destination.js"></script>
 </html>
