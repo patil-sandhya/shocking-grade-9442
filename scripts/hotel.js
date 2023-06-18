@@ -224,18 +224,3 @@ star5.addEventListener("click",()=>{
     })
     displayHotel(data);
 })
-
-// searchBtn.addEventListener("click",()=>{
-// fetchSearch(`${baseUrl}?${search_input.value}`)
-// })
-
-// async function fetchSearch(url){
-//     try {
-//         let res = await fetch(url)
-        
-//         let data = res.json();
-//         displayHotel(data)
-//     } catch (error) {
-//      console.log(error);   
-//     }
-// }
