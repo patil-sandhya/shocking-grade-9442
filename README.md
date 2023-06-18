@@ -39,13 +39,13 @@ Hotel nav bar and search container
 
 
 *sort and filter* 
-
 ![Screenshot (1475)](https://github.com/patil-sandhya/shocking-grade-9442/assets/119441119/1c57f01e-9eae-4d43-921b-12a329c50a18)
 
 
 sort by the Price and the Near location
 
 filter by the their review
+
 ![Screenshot (1475)](https://github.com/patil-sandhya/shocking-grade-9442/assets/119441119/1c57f01e-9eae-4d43-921b-12a329c50a18)
 
 Card page have the hotels details and their price 
@@ -57,6 +57,7 @@ and click on the Book now Button hotel book and redirect to cart page
 In the card page you can see the hotel image and details 
 You can increase the day 
 you can add guest also
+
 
 ![Screenshot (1477)](https://github.com/patil-sandhya/shocking-grade-9442/assets/119441119/c03bd133-f07e-45cc-8481-1a32f93bbf4a)
 
