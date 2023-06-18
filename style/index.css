@@ -48,6 +48,18 @@ body{
     color:white;
   }
 
+  .topnav img{
+    width: 150px;
+    margin-left: 150px;
+  }
+
+   marquee img{
+      height: 200px;
+   }
+
+   /* marquee img:hover{
+    transform: scale(2,2);
+   } */
 
 
 
