@@ -649,9 +649,7 @@ footer {
         width: 150px;
         height: 150px;
       }
-      .midcontaint{
-        /* margin-left: 15px; */
-      }
+      
 
       .Question .Queone{
         display: none;
@@ -686,4 +684,4 @@ footer {
 
 
 
-  /* Media Query for the project */
+  
