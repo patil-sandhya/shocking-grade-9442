@@ -539,7 +539,7 @@ nav{
     background-image: linear-gradient(black,darkBlue);
     position: sticky;
     top: 0;
-    /* change */
+    z-index:1;
 
 }
 
