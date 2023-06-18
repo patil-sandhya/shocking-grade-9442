@@ -6,7 +6,7 @@
     --color-success : #41f1b6;
     --color-warning : #ffbb55;
     --color-white : #fff;
-    --color-info-dark : #7d8da1;
+    --color-info-dark : #3F52DE;
     --color-info-light : #dce1eb;
     --color-dark : #363949;
     --color-light : rgba(132, 139, 200, 0.18);
@@ -401,9 +401,9 @@ main>h1{
     height: 40px;
     border-radius: 5%;
     margin-left:3%;
-    border-color: rgb(179, 164, 6);
-    background-color: rgb(248, 190, 171);
-
+    border-color: rgb(213, 250, 248);
+    background-color: #3f52de;
+    color: white;
 }
 
 .pageBtn:hover {

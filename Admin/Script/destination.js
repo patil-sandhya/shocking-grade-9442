@@ -12,7 +12,7 @@ closeBtn.addEventListener("click", () => {
 //display services
 
 let productsContainer = document.getElementById("product-container");
-let baseUrl = `https://hid-food-apii.onrender.com/product_data`;
+let baseUrl = `https://dream-destine.onrender.com/destinations`;
 let pagination = document.getElementById("pagination");
 let mainSection = document.getElementById("container");
 let lthBtn = document.getElementById("lth");
@@ -71,15 +71,15 @@ function createCard(product){
 
     let productImg = document.createElement("img");
     productImg.setAttribute("class", "product-img");
-    productImg.src = product.avatar;
+    productImg.src = product.img;
 
     let productDesc = document.createElement("p");
     productDesc.setAttribute("class", "product-desc");
-    productDesc.innerText = product.details;
+    productDesc.innerText = product.desc;
 
     let productName = document.createElement("h2");
     productName.setAttribute("class", "product-category");
-    productName.innerText = product.name;
+    productName.innerText = product.h3;
     
     let productPrice = document.createElement("h4");
     productPrice.setAttribute("class", "product-desc");
@@ -99,7 +99,7 @@ function createCard(product){
 
     editButton.addEventListener("click", function(){
         localStorage.setItem("editItem", product.id)
-        window.location.href="editHotel.html";
+        window.location.href="editDestination.html";
     })
     productCard.append(productImg, productName, productDesc,productPrice, removeButton, editButton);
 
@@ -134,9 +134,9 @@ filterBtn.addEventListener("change", () => {
 
 })
 
-async function deleteHotel(hotelId){
+async function deleteHotel(desId){
     try {
-      let res = await fetch(`${baseUrl}/${hotelId}`,{
+      let res = await fetch(`${baseUrl}/${desId}`,{
         method:"DELETE",
         headers:{
           "Content-type":"application/json"
