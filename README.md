@@ -102,5 +102,5 @@ Vinay Thakur    - fw24_063
 
 **deploy link**
 
-
+https://zippy-pastelito-9fbf71.netlify.app/
 
