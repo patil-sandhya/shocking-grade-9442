@@ -27,7 +27,7 @@ It typically includes fields for users to enter their email address and password
 ![Screenshot 2023-06-18 193234](https://github.com/patil-sandhya/shocking-grade-9442/assets/117443062/2dd52fa4-cd7b-4a97-be29-f7cdb6ee1af7)
 
 # Landing Page
-
+![Screenshot 2023-06-19 003151](https://github.com/patil-sandhya/shocking-grade-9442/assets/117443062/912fd53b-9249-431d-adbe-a59ddb0c390b)
 # Home Page
 This is home page
 ![Screenshot 2023-06-18 231056](https://github.com/patil-sandhya/shocking-grade-9442/assets/117443062/6169aec1-83e8-4443-ae8b-01d026087f2c)
