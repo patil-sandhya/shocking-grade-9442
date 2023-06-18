@@ -34,7 +34,8 @@ async function postData(){
     console.log(data)
     let obj ={
       "email": email.value,
-      "pass": password.value
+      "pass": password.value,
+      "name": name.value,
   }
   localStorage.setItem("user", JSON.stringify(obj))
     alert("Signup Sucessfully")
