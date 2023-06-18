@@ -34,7 +34,40 @@ This is home page
 
 
 # Hotel Page
+Hotel nav bar and search container
+![Screenshot (1474)](https://github.com/patil-sandhya/shocking-grade-9442/assets/119441119/4390ee35-4718-437d-88c4-33e14682e55a)
 
+
+*sort and filter* 
+
+![Screenshot (1475)](https://github.com/patil-sandhya/shocking-grade-9442/assets/119441119/1c57f01e-9eae-4d43-921b-12a329c50a18)
+
+
+sort by the Price and the Near location
+
+filter by the their review
+![Screenshot (1475)](https://github.com/patil-sandhya/shocking-grade-9442/assets/119441119/1c57f01e-9eae-4d43-921b-12a329c50a18)
+
+Card page have the hotels details and their price 
+and click on the Book now Button hotel book and redirect to cart page
+
+![Screenshot (1476)](https://github.com/patil-sandhya/shocking-grade-9442/assets/119441119/6e27a347-24a7-45d4-8907-05a5a01e9c25)
+
+#Card page 
+In the card page you can see the hotel image and details 
+You can increase the day 
+you can add guest also
+
+![Screenshot (1477)](https://github.com/patil-sandhya/shocking-grade-9442/assets/119441119/c03bd133-f07e-45cc-8481-1a32f93bbf4a)
+
+#User Details 
+
+You can add the details of the customer 
+![Screenshot (1479)](https://github.com/patil-sandhya/shocking-grade-9442/assets/119441119/8b3011bb-d8e6-4d8a-97e2-9f039d84840d)
+
+#Payment 
+
+![Screenshot (1478)](https://github.com/patil-sandhya/shocking-grade-9442/assets/119441119/edc46ef1-e161-4974-a99b-fe6659b84eb5)
 # Destination Page
 
 ### Popular Destinations
