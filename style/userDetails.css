@@ -1,0 +1,156 @@
+#container {
+    width: 35%;
+    margin: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    border-radius: 10px;
+}
+#container:hover{
+    border: 1px solid rgb(52, 157, 255) ;
+   
+}
+
+h2 {
+    background-color: rgb(52, 157, 255);
+    color: white;
+    padding: 10px;
+   text-align: center;
+
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    margin-left: 20px;
+    margin: auto;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+input {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding-left: 3%;
+}
+
+button[type="submit"] {
+    width:150px;
+    background-color: rgb(52, 157, 255);
+    color: white;
+    margin: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(52, 157, 255);
+}
+
+
+/* footer */
+
+
+.containe {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #1f1b22;
+    padding: 70px 0
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 25px;
+    color: whitesmoke;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: red;
+    height: 2px;
+    box-sizing: border-box;
+    width: 200px;
+}
+
+.footer-col ul li:not(last-chlid) {
+    margin-bottom: 15px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fefefe;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: teal;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #fefefe;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: brown;
+    padding-left: 10px;
+}
+
+@media (max-width: 750px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+}
